@@ -1,0 +1,37 @@
+<div class="container">
+
+	<div class="panel panel-primary row">
+		<div class="panel-heading">
+			<h3 class="panel-title">道具查询：</h3>
+		</div>
+		<div class="panel-body bg-info">
+			<form sf-schema="searchSchema" sf-form="searchForm" sf-model="searchModel"></form>
+		<div class="col-lg-12">
+			<h4>道具列表:</h4>
+		</div>
+		<div class="col-lg-8">
+			<table class="table table-hover table-condensed ">
+				<thead>
+					<th>序号</th>
+					<th>道具名</th>
+					<th>道具ID</th>
+					<th>道具级别</th>
+					<th>道具数量</th>
+					<th>操作</th>
+				</thead>
+				<tbody>
+					<tr ng-repeat="item in items">
+						<td>{{$index + 1}}</td>
+						<td>{{item.name}}</td>
+						<td>{{item.id}}</td>
+						<td>{{item.quality}}</td>
+						<td>{{item.num}}</td>
+						<td><a href="#">删除</a></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+		</div>
+	</div>
+
+</div>

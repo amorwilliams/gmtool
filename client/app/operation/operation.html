@@ -1,0 +1,24 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <h1>GM Tool</h1>
+    <p class="lead">Game Manager for Simona</p>
+    <!--<img src="assets/images/yeoman.png" alt="I'm Yeoman">-->
+  </div>
+</header>
+
+<div class="container" id="operation-data">
+  <div class="col-md-12 column">
+    <tabs data="tabData" type="tabs" justified = true></tabs>
+    <ui-view class = "data-content"></ui-view>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p>Angular Fullstack v2.0.13 |
+      <a href="https://twitter.com/tyhenkel">@tyhenkel</a> |
+      <a href="https://github.com/DaftMonk/generator-angular-fullstack/issues?state=open">Issues</a></p>
+  </div>
+</footer>
